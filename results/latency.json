@@ -1,0 +1,41 @@
+{
+  "kind": "latency",
+  "runId": "lat-20261108T001601-4a21",
+  "measuredAt": "2026-11-08T00:17:35.130Z",
+  "config": {
+    "coldStartProfile": "p4-256mb",
+    "processorBatchSize": 10,
+    "billingMode": "PAY_PER_REQUEST",
+    "apiRateLimit": 200
+  },
+  "events": 100,
+  "ratePerSecond": 2,
+  "seededSubscriptions": 100,
+  "accepted": 100,
+  "notAccepted": 0,
+  "statusCounts": {
+    "202": 100
+  },
+  "apiResponseMs": {
+    "n": 100,
+    "p50": 60,
+    "p95": 96,
+    "min": 49,
+    "max": 1068,
+    "avg": 82.03
+  },
+  "pipelineLatencyMs": {
+    "n": 100,
+    "p50": 3862,
+    "p95": 8156,
+    "min": 432,
+    "max": 21300,
+    "avg": 4257.87
+  },
+  "notificationsReceived": 100,
+  "completed": 100,
+  "outcomes": {
+    "NOTIFIED": 100
+  },
+  "lost": 0
+}

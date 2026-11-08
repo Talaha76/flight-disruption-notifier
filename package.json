@@ -1,0 +1,62 @@
+{
+  "name": "flight-disruption-notifier",
+  "version": "0.1.0",
+  "description": "Serverless, event-driven flight disruption notifier on AWS (API Gateway, Lambda, SQS, DynamoDB, SNS, CDK)",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint .",
+    "test": "jest test/unit test/infra",
+    "test:unit": "jest test/unit",
+    "test:infra": "jest test/infra",
+    "test:integration": "jest test/integration --runInBand --testTimeout=180000",
+    "synth": "cdk synth --quiet",
+    "diff": "cdk diff",
+    "deploy": "cdk deploy --require-approval never --outputs-file cdk-outputs.json",
+    "destroy": "cdk destroy --force",
+    "bootstrap": "cdk bootstrap",
+    "seed": "tsx scripts/seed-subscriptions.ts",
+    "smoke": "jest test/integration --runInBand --testTimeout=180000",
+    "redrive": "tsx scripts/dlq-redrive.ts",
+    "verify": "npm run build && npm run lint && npm test && npm run synth",
+    "measure:latency": "tsx scripts/measure/latency.ts",
+    "measure:spike": "tsx scripts/measure/spike.ts",
+    "measure:batching": "tsx scripts/measure/batching.ts",
+    "measure:coldstarts": "tsx scripts/measure/coldstarts.ts",
+    "measure:report": "tsx scripts/measure/report.ts",
+    "measure:recount": "tsx scripts/measure/recount.ts"
+  },
+  "author": "Talaha Khan",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.1164.0",
+    "@aws-sdk/client-sns": "^3.1164.0",
+    "@aws-sdk/client-sqs": "^3.1164.0",
+    "@aws-sdk/lib-dynamodb": "^3.1164.0",
+    "aws-cdk-lib": "^2.275.0",
+    "constructs": "^10.8.1",
+    "fast-xml-parser": "^5.12.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-cloudwatch": "^3.1164.0",
+    "@aws-sdk/client-cloudwatch-logs": "^3.1164.0",
+    "@aws-sdk/client-lambda": "^3.1164.0",
+    "@eslint/js": "^10.0.1",
+    "@types/aws-lambda": "^8.10.164",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.20.5",
+    "aws-cdk": "^2.1148.0",
+    "aws-sdk-client-mock": "^4.1.0",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.14.0",
+    "jest": "^30.5.2",
+    "ts-jest": "^29.4.15",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9",
+    "typescript-eslint": "^8.72.1"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  }
+}

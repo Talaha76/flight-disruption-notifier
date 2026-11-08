@@ -1,0 +1,1312 @@
+{
+  "kind": "spike",
+  "runId": "spike-20261108T002315-f6b0",
+  "measuredAt": "2026-11-08T00:32:47.329Z",
+  "config": {
+    "coldStartProfile": "p4-256mb",
+    "processorBatchSize": 10,
+    "billingMode": "PAY_PER_REQUEST",
+    "apiRateLimit": 200
+  },
+  "accountConcurrency": 10,
+  "processorMaxConcurrency": 2,
+  "eventsSent": 10000,
+  "requests": 1000,
+  "requestsPerSecond": 25,
+  "accepted": 10000,
+  "notAccepted": 0,
+  "statusCounts": {
+    "202": 1000,
+    "503": 12
+  },
+  "retries": 12,
+  "apiResponseMs": {
+    "n": 1000,
+    "p50": 60,
+    "p95": 97,
+    "min": 46,
+    "max": 1076,
+    "avg": 73.398
+  },
+  "ingestSeconds": 40,
+  "ingestRateEventsPerSecond": 249.9,
+  "peakQueueDepth": 9590,
+  "peakQueueVisible": 9580,
+  "timeToDrainSeconds": 506.3,
+  "backlogClearedAfterLoadSeconds": 466.3,
+  "completed": 10000,
+  "outcomes": {
+    "STALE": 5389,
+    "NOTIFIED": 4611
+  },
+  "lost": 0,
+  "lostIdsSample": [],
+  "dlqNewMessages": 0,
+  "processingSpan": {
+    "firstStartedAt": "2026-11-08T00:23:23.012Z",
+    "lastCompletedAt": "2026-11-08T00:31:36.040Z"
+  },
+  "processor": {
+    "invocations": "1001",
+    "billedMs": "512086",
+    "avgMs": "510.46",
+    "p50Ms": "456.6597",
+    "p95Ms": "917.4424",
+    "coldStarts": "2",
+    "memoryMb": 256,
+    "arch": "arm64"
+  },
+  "queueSamples": [
+    {
+      "s": 0,
+      "visible": 0,
+      "inFlight": 0
+    },
+    {
+      "s": 2.1,
+      "visible": 470,
+      "inFlight": 30
+    },
+    {
+      "s": 4.1,
+      "visible": 470,
+      "inFlight": 30
+    },
+    {
+      "s": 6.2,
+      "visible": 0,
+      "inFlight": 0
+    },
+    {
+      "s": 8.2,
+      "visible": 2010,
+      "inFlight": 12
+    },
+    {
+      "s": 10.3,
+      "visible": 0,
+      "inFlight": 0
+    },
+    {
+      "s": 12.3,
+      "visible": 0,
+      "inFlight": 0
+    },
+    {
+      "s": 14.4,
+      "visible": 1510,
+      "inFlight": 20
+    },
+    {
+      "s": 16.4,
+      "visible": 2010,
+      "inFlight": 12
+    },
+    {
+      "s": 18.4,
+      "visible": 0,
+      "inFlight": 0
+    },
+    {
+      "s": 20.5,
+      "visible": 2010,
+      "inFlight": 12
+    },
+    {
+      "s": 22.5,
+      "visible": 0,
+      "inFlight": 0
+    },
+    {
+      "s": 24.6,
+      "visible": 3990,
+      "inFlight": 10
+    },
+    {
+      "s": 26.6,
+      "visible": 4470,
+      "inFlight": 20
+    },
+    {
+      "s": 28.6,
+      "visible": 4470,
+      "inFlight": 20
+    },
+    {
+      "s": 30.7,
+      "visible": 5930,
+      "inFlight": 10
+    },
+    {
+      "s": 32.7,
+      "visible": 5930,
+      "inFlight": 10
+    },
+    {
+      "s": 34.8,
+      "visible": 5930,
+      "inFlight": 10
+    },
+    {
+      "s": 36.8,
+      "visible": 6390,
+      "inFlight": 40
+    },
+    {
+      "s": 38.9,
+      "visible": 5940,
+      "inFlight": 10
+    },
+    {
+      "s": 40.9,
+      "visible": 4800,
+      "inFlight": 10
+    },
+    {
+      "s": 43,
+      "visible": 5940,
+      "inFlight": 10
+    },
+    {
+      "s": 45,
+      "visible": 9310,
+      "inFlight": 20
+    },
+    {
+      "s": 47.1,
+      "visible": 7380,
+      "inFlight": 10
+    },
+    {
+      "s": 49.1,
+      "visible": 7380,
+      "inFlight": 10
+    },
+    {
+      "s": 51.1,
+      "visible": 9580,
+      "inFlight": 10
+    },
+    {
+      "s": 53.2,
+      "visible": 9580,
+      "inFlight": 10
+    },
+    {
+      "s": 55.2,
+      "visible": 8817,
+      "inFlight": 20
+    },
+    {
+      "s": 57.3,
+      "visible": 9430,
+      "inFlight": 20
+    },
+    {
+      "s": 59.3,
+      "visible": 9320,
+      "inFlight": 20
+    },
+    {
+      "s": 61.4,
+      "visible": 9430,
+      "inFlight": 20
+    },
+    {
+      "s": 63.4,
+      "visible": 9330,
+      "inFlight": 20
+    },
+    {
+      "s": 65.5,
+      "visible": 9510,
+      "inFlight": 20
+    },
+    {
+      "s": 67.5,
+      "visible": 9370,
+      "inFlight": 20
+    },
+    {
+      "s": 69.6,
+      "visible": 9250,
+      "inFlight": 10
+    },
+    {
+      "s": 71.6,
+      "visible": 9370,
+      "inFlight": 20
+    },
+    {
+      "s": 73.7,
+      "visible": 9220,
+      "inFlight": 10
+    },
+    {
+      "s": 75.7,
+      "visible": 9210,
+      "inFlight": 10
+    },
+    {
+      "s": 77.8,
+      "visible": 9160,
+      "inFlight": 10
+    },
+    {
+      "s": 79.8,
+      "visible": 9330,
+      "inFlight": 20
+    },
+    {
+      "s": 81.9,
+      "visible": 9330,
+      "inFlight": 20
+    },
+    {
+      "s": 84,
+      "visible": 9180,
+      "inFlight": 20
+    },
+    {
+      "s": 86,
+      "visible": 9090,
+      "inFlight": 0
+    },
+    {
+      "s": 88,
+      "visible": 9050,
+      "inFlight": 20
+    },
+    {
+      "s": 90.1,
+      "visible": 8980,
+      "inFlight": 20
+    },
+    {
+      "s": 92.1,
+      "visible": 9010,
+      "inFlight": 10
+    },
+    {
+      "s": 94.2,
+      "visible": 8980,
+      "inFlight": 20
+    },
+    {
+      "s": 96.2,
+      "visible": 9030,
+      "inFlight": 20
+    },
+    {
+      "s": 98.3,
+      "visible": 8910,
+      "inFlight": 20
+    },
+    {
+      "s": 100.3,
+      "visible": 8950,
+      "inFlight": 20
+    },
+    {
+      "s": 102.4,
+      "visible": 8950,
+      "inFlight": 20
+    },
+    {
+      "s": 104.4,
+      "visible": 8880,
+      "inFlight": 10
+    },
+    {
+      "s": 106.5,
+      "visible": 8780,
+      "inFlight": 20
+    },
+    {
+      "s": 108.5,
+      "visible": 8740,
+      "inFlight": 20
+    },
+    {
+      "s": 110.6,
+      "visible": 8780,
+      "inFlight": 20
+    },
+    {
+      "s": 112.6,
+      "visible": 8740,
+      "inFlight": 20
+    },
+    {
+      "s": 114.6,
+      "visible": 8600,
+      "inFlight": 20
+    },
+    {
+      "s": 116.7,
+      "visible": 8850,
+      "inFlight": 10
+    },
+    {
+      "s": 118.7,
+      "visible": 8660,
+      "inFlight": 10
+    },
+    {
+      "s": 120.8,
+      "visible": 8540,
+      "inFlight": 10
+    },
+    {
+      "s": 122.8,
+      "visible": 8540,
+      "inFlight": 10
+    },
+    {
+      "s": 124.9,
+      "visible": 8510,
+      "inFlight": 30
+    },
+    {
+      "s": 127,
+      "visible": 8630,
+      "inFlight": 10
+    },
+    {
+      "s": 129,
+      "visible": 8490,
+      "inFlight": 20
+    },
+    {
+      "s": 131.1,
+      "visible": 8380,
+      "inFlight": 20
+    },
+    {
+      "s": 133.1,
+      "visible": 8440,
+      "inFlight": 10
+    },
+    {
+      "s": 135.2,
+      "visible": 8350,
+      "inFlight": 20
+    },
+    {
+      "s": 137.2,
+      "visible": 8290,
+      "inFlight": 20
+    },
+    {
+      "s": 139.3,
+      "visible": 8460,
+      "inFlight": 20
+    },
+    {
+      "s": 141.3,
+      "visible": 8250,
+      "inFlight": 20
+    },
+    {
+      "s": 143.4,
+      "visible": 8320,
+      "inFlight": 20
+    },
+    {
+      "s": 145.4,
+      "visible": 8150,
+      "inFlight": 20
+    },
+    {
+      "s": 147.5,
+      "visible": 8120,
+      "inFlight": 20
+    },
+    {
+      "s": 149.5,
+      "visible": 8090,
+      "inFlight": 10
+    },
+    {
+      "s": 151.5,
+      "visible": 8090,
+      "inFlight": 10
+    },
+    {
+      "s": 153.6,
+      "visible": 8000,
+      "inFlight": 10
+    },
+    {
+      "s": 155.6,
+      "visible": 8030,
+      "inFlight": 20
+    },
+    {
+      "s": 157.7,
+      "visible": 8180,
+      "inFlight": 20
+    },
+    {
+      "s": 159.7,
+      "visible": 7950,
+      "inFlight": 20
+    },
+    {
+      "s": 161.9,
+      "visible": 7950,
+      "inFlight": 20
+    },
+    {
+      "s": 164,
+      "visible": 7800,
+      "inFlight": 20
+    },
+    {
+      "s": 166,
+      "visible": 7770,
+      "inFlight": 10
+    },
+    {
+      "s": 168.1,
+      "visible": 7770,
+      "inFlight": 10
+    },
+    {
+      "s": 170.1,
+      "visible": 7770,
+      "inFlight": 10
+    },
+    {
+      "s": 172.1,
+      "visible": 7880,
+      "inFlight": 10
+    },
+    {
+      "s": 174.2,
+      "visible": 7880,
+      "inFlight": 10
+    },
+    {
+      "s": 176.2,
+      "visible": 7840,
+      "inFlight": 10
+    },
+    {
+      "s": 178.3,
+      "visible": 7500,
+      "inFlight": 10
+    },
+    {
+      "s": 180.4,
+      "visible": 7500,
+      "inFlight": 10
+    },
+    {
+      "s": 182.4,
+      "visible": 7640,
+      "inFlight": 20
+    },
+    {
+      "s": 184.5,
+      "visible": 8220,
+      "inFlight": 20
+    },
+    {
+      "s": 186.5,
+      "visible": 7680,
+      "inFlight": 20
+    },
+    {
+      "s": 188.6,
+      "visible": 7360,
+      "inFlight": 10
+    },
+    {
+      "s": 190.6,
+      "visible": 7680,
+      "inFlight": 20
+    },
+    {
+      "s": 192.7,
+      "visible": 7200,
+      "inFlight": 20
+    },
+    {
+      "s": 194.7,
+      "visible": 7250,
+      "inFlight": 20
+    },
+    {
+      "s": 196.8,
+      "visible": 7250,
+      "inFlight": 20
+    },
+    {
+      "s": 198.8,
+      "visible": 7010,
+      "inFlight": 20
+    },
+    {
+      "s": 200.9,
+      "visible": 7160,
+      "inFlight": 10
+    },
+    {
+      "s": 202.9,
+      "visible": 7100,
+      "inFlight": 20
+    },
+    {
+      "s": 205,
+      "visible": 7410,
+      "inFlight": 20
+    },
+    {
+      "s": 207.1,
+      "visible": 6890,
+      "inFlight": 20
+    },
+    {
+      "s": 209.1,
+      "visible": 6860,
+      "inFlight": 20
+    },
+    {
+      "s": 211.2,
+      "visible": 6860,
+      "inFlight": 20
+    },
+    {
+      "s": 213.2,
+      "visible": 6750,
+      "inFlight": 10
+    },
+    {
+      "s": 215.3,
+      "visible": 6820,
+      "inFlight": 10
+    },
+    {
+      "s": 217.3,
+      "visible": 6820,
+      "inFlight": 10
+    },
+    {
+      "s": 219.4,
+      "visible": 6710,
+      "inFlight": 10
+    },
+    {
+      "s": 221.4,
+      "visible": 6960,
+      "inFlight": 20
+    },
+    {
+      "s": 223.5,
+      "visible": 6710,
+      "inFlight": 10
+    },
+    {
+      "s": 225.5,
+      "visible": 6470,
+      "inFlight": 20
+    },
+    {
+      "s": 227.5,
+      "visible": 6770,
+      "inFlight": 30
+    },
+    {
+      "s": 229.6,
+      "visible": 6440,
+      "inFlight": 10
+    },
+    {
+      "s": 231.6,
+      "visible": 6770,
+      "inFlight": 30
+    },
+    {
+      "s": 233.7,
+      "visible": 6630,
+      "inFlight": 10
+    },
+    {
+      "s": 235.7,
+      "visible": 6310,
+      "inFlight": 20
+    },
+    {
+      "s": 237.8,
+      "visible": 6410,
+      "inFlight": 20
+    },
+    {
+      "s": 239.8,
+      "visible": 6360,
+      "inFlight": 10
+    },
+    {
+      "s": 241.9,
+      "visible": 6410,
+      "inFlight": 20
+    },
+    {
+      "s": 243.9,
+      "visible": 6360,
+      "inFlight": 10
+    },
+    {
+      "s": 245.9,
+      "visible": 6120,
+      "inFlight": 10
+    },
+    {
+      "s": 248,
+      "visible": 6170,
+      "inFlight": 20
+    },
+    {
+      "s": 250,
+      "visible": 6120,
+      "inFlight": 10
+    },
+    {
+      "s": 252.1,
+      "visible": 6210,
+      "inFlight": 10
+    },
+    {
+      "s": 254.1,
+      "visible": 6270,
+      "inFlight": 20
+    },
+    {
+      "s": 256.2,
+      "visible": 6070,
+      "inFlight": 10
+    },
+    {
+      "s": 258.2,
+      "visible": 5800,
+      "inFlight": 20
+    },
+    {
+      "s": 260.3,
+      "visible": 5800,
+      "inFlight": 20
+    },
+    {
+      "s": 262.3,
+      "visible": 5740,
+      "inFlight": 20
+    },
+    {
+      "s": 264.4,
+      "visible": 5900,
+      "inFlight": 10
+    },
+    {
+      "s": 266.4,
+      "visible": 5740,
+      "inFlight": 20
+    },
+    {
+      "s": 268.5,
+      "visible": 5900,
+      "inFlight": 10
+    },
+    {
+      "s": 270.5,
+      "visible": 5770,
+      "inFlight": 20
+    },
+    {
+      "s": 272.6,
+      "visible": 5770,
+      "inFlight": 20
+    },
+    {
+      "s": 274.6,
+      "visible": 5520,
+      "inFlight": 10
+    },
+    {
+      "s": 276.7,
+      "visible": 5520,
+      "inFlight": 10
+    },
+    {
+      "s": 278.7,
+      "visible": 5730,
+      "inFlight": 20
+    },
+    {
+      "s": 280.8,
+      "visible": 5560,
+      "inFlight": 10
+    },
+    {
+      "s": 282.8,
+      "visible": 5280,
+      "inFlight": 20
+    },
+    {
+      "s": 284.9,
+      "visible": 5670,
+      "inFlight": 20
+    },
+    {
+      "s": 287,
+      "visible": 5140,
+      "inFlight": 20
+    },
+    {
+      "s": 289,
+      "visible": 5140,
+      "inFlight": 20
+    },
+    {
+      "s": 291,
+      "visible": 5140,
+      "inFlight": 20
+    },
+    {
+      "s": 293.1,
+      "visible": 5030,
+      "inFlight": 20
+    },
+    {
+      "s": 295.1,
+      "visible": 5090,
+      "inFlight": 10
+    },
+    {
+      "s": 297.2,
+      "visible": 5000,
+      "inFlight": 0
+    },
+    {
+      "s": 299.2,
+      "visible": 4880,
+      "inFlight": 20
+    },
+    {
+      "s": 301.3,
+      "visible": 5360,
+      "inFlight": 10
+    },
+    {
+      "s": 303.3,
+      "visible": 4880,
+      "inFlight": 20
+    },
+    {
+      "s": 305.4,
+      "visible": 5210,
+      "inFlight": 10
+    },
+    {
+      "s": 307.5,
+      "visible": 4750,
+      "inFlight": 20
+    },
+    {
+      "s": 309.5,
+      "visible": 4720,
+      "inFlight": 20
+    },
+    {
+      "s": 311.5,
+      "visible": 4800,
+      "inFlight": 20
+    },
+    {
+      "s": 313.6,
+      "visible": 4600,
+      "inFlight": 10
+    },
+    {
+      "s": 315.6,
+      "visible": 4550,
+      "inFlight": 20
+    },
+    {
+      "s": 317.7,
+      "visible": 4500,
+      "inFlight": 20
+    },
+    {
+      "s": 319.7,
+      "visible": 4550,
+      "inFlight": 20
+    },
+    {
+      "s": 321.8,
+      "visible": 4670,
+      "inFlight": 20
+    },
+    {
+      "s": 323.8,
+      "visible": 4670,
+      "inFlight": 20
+    },
+    {
+      "s": 326,
+      "visible": 4350,
+      "inFlight": 20
+    },
+    {
+      "s": 328.1,
+      "visible": 4430,
+      "inFlight": 20
+    },
+    {
+      "s": 330.1,
+      "visible": 4400,
+      "inFlight": 10
+    },
+    {
+      "s": 332.1,
+      "visible": 4430,
+      "inFlight": 20
+    },
+    {
+      "s": 334.2,
+      "visible": 4140,
+      "inFlight": 20
+    },
+    {
+      "s": 336.2,
+      "visible": 4310,
+      "inFlight": 20
+    },
+    {
+      "s": 338.3,
+      "visible": 4640,
+      "inFlight": 20
+    },
+    {
+      "s": 340.3,
+      "visible": 4640,
+      "inFlight": 20
+    },
+    {
+      "s": 342.3,
+      "visible": 4000,
+      "inFlight": 20
+    },
+    {
+      "s": 344.4,
+      "visible": 3970,
+      "inFlight": 20
+    },
+    {
+      "s": 346.5,
+      "visible": 3970,
+      "inFlight": 20
+    },
+    {
+      "s": 348.5,
+      "visible": 3930,
+      "inFlight": 20
+    },
+    {
+      "s": 350.5,
+      "visible": 4080,
+      "inFlight": 20
+    },
+    {
+      "s": 352.6,
+      "visible": 3840,
+      "inFlight": 10
+    },
+    {
+      "s": 354.6,
+      "visible": 3710,
+      "inFlight": 10
+    },
+    {
+      "s": 356.7,
+      "visible": 3710,
+      "inFlight": 10
+    },
+    {
+      "s": 358.7,
+      "visible": 3710,
+      "inFlight": 10
+    },
+    {
+      "s": 360.8,
+      "visible": 3670,
+      "inFlight": 20
+    },
+    {
+      "s": 362.8,
+      "visible": 3780,
+      "inFlight": 20
+    },
+    {
+      "s": 364.9,
+      "visible": 3670,
+      "inFlight": 20
+    },
+    {
+      "s": 366.9,
+      "visible": 3780,
+      "inFlight": 20
+    },
+    {
+      "s": 368.9,
+      "visible": 3560,
+      "inFlight": 20
+    },
+    {
+      "s": 371,
+      "visible": 3560,
+      "inFlight": 20
+    },
+    {
+      "s": 373,
+      "visible": 3560,
+      "inFlight": 20
+    },
+    {
+      "s": 375.1,
+      "visible": 3360,
+      "inFlight": 20
+    },
+    {
+      "s": 377.1,
+      "visible": 3630,
+      "inFlight": 20
+    },
+    {
+      "s": 379.2,
+      "visible": 3230,
+      "inFlight": 20
+    },
+    {
+      "s": 381.2,
+      "visible": 3230,
+      "inFlight": 20
+    },
+    {
+      "s": 383.3,
+      "visible": 3230,
+      "inFlight": 20
+    },
+    {
+      "s": 385.3,
+      "visible": 2990,
+      "inFlight": 20
+    },
+    {
+      "s": 387.3,
+      "visible": 3300,
+      "inFlight": 10
+    },
+    {
+      "s": 389.4,
+      "visible": 3300,
+      "inFlight": 10
+    },
+    {
+      "s": 391.4,
+      "visible": 2850,
+      "inFlight": 20
+    },
+    {
+      "s": 393.5,
+      "visible": 3050,
+      "inFlight": 10
+    },
+    {
+      "s": 395.5,
+      "visible": 3080,
+      "inFlight": 20
+    },
+    {
+      "s": 397.6,
+      "visible": 2740,
+      "inFlight": 20
+    },
+    {
+      "s": 399.6,
+      "visible": 2830,
+      "inFlight": 0
+    },
+    {
+      "s": 401.7,
+      "visible": 2700,
+      "inFlight": 10
+    },
+    {
+      "s": 403.7,
+      "visible": 2830,
+      "inFlight": 0
+    },
+    {
+      "s": 405.8,
+      "visible": 2500,
+      "inFlight": 20
+    },
+    {
+      "s": 407.8,
+      "visible": 2500,
+      "inFlight": 20
+    },
+    {
+      "s": 409.8,
+      "visible": 2500,
+      "inFlight": 20
+    },
+    {
+      "s": 411.9,
+      "visible": 2540,
+      "inFlight": 20
+    },
+    {
+      "s": 413.9,
+      "visible": 2540,
+      "inFlight": 20
+    },
+    {
+      "s": 416,
+      "visible": 2500,
+      "inFlight": 20
+    },
+    {
+      "s": 418,
+      "visible": 2360,
+      "inFlight": 10
+    },
+    {
+      "s": 420.1,
+      "visible": 2470,
+      "inFlight": 0
+    },
+    {
+      "s": 422.1,
+      "visible": 2450,
+      "inFlight": 10
+    },
+    {
+      "s": 424.2,
+      "visible": 2110,
+      "inFlight": 20
+    },
+    {
+      "s": 426.2,
+      "visible": 2450,
+      "inFlight": 10
+    },
+    {
+      "s": 428.3,
+      "visible": 2240,
+      "inFlight": 10
+    },
+    {
+      "s": 430.3,
+      "visible": 2240,
+      "inFlight": 10
+    },
+    {
+      "s": 432.4,
+      "visible": 2070,
+      "inFlight": 10
+    },
+    {
+      "s": 434.4,
+      "visible": 2020,
+      "inFlight": 0
+    },
+    {
+      "s": 436.5,
+      "visible": 1850,
+      "inFlight": 20
+    },
+    {
+      "s": 438.5,
+      "visible": 1740,
+      "inFlight": 30
+    },
+    {
+      "s": 440.6,
+      "visible": 2030,
+      "inFlight": 10
+    },
+    {
+      "s": 442.6,
+      "visible": 1670,
+      "inFlight": 20
+    },
+    {
+      "s": 444.7,
+      "visible": 1710,
+      "inFlight": 10
+    },
+    {
+      "s": 446.7,
+      "visible": 1610,
+      "inFlight": 20
+    },
+    {
+      "s": 448.8,
+      "visible": 1960,
+      "inFlight": 10
+    },
+    {
+      "s": 450.8,
+      "visible": 1440,
+      "inFlight": 0
+    },
+    {
+      "s": 452.8,
+      "visible": 1366,
+      "inFlight": 24
+    },
+    {
+      "s": 454.9,
+      "visible": 1510,
+      "inFlight": 0
+    },
+    {
+      "s": 457,
+      "visible": 1256,
+      "inFlight": 14
+    },
+    {
+      "s": 459,
+      "visible": 1186,
+      "inFlight": 14
+    },
+    {
+      "s": 461.1,
+      "visible": 1146,
+      "inFlight": 4
+    },
+    {
+      "s": 463.1,
+      "visible": 1146,
+      "inFlight": 4
+    },
+    {
+      "s": 465.1,
+      "visible": 1126,
+      "inFlight": 14
+    },
+    {
+      "s": 467.2,
+      "visible": 1066,
+      "inFlight": 14
+    },
+    {
+      "s": 469.2,
+      "visible": 1066,
+      "inFlight": 14
+    },
+    {
+      "s": 471.3,
+      "visible": 1066,
+      "inFlight": 14
+    },
+    {
+      "s": 473.3,
+      "visible": 1006,
+      "inFlight": 14
+    },
+    {
+      "s": 475.4,
+      "visible": 926,
+      "inFlight": 24
+    },
+    {
+      "s": 477.4,
+      "visible": 926,
+      "inFlight": 24
+    },
+    {
+      "s": 479.5,
+      "visible": 766,
+      "inFlight": 14
+    },
+    {
+      "s": 481.5,
+      "visible": 536,
+      "inFlight": 14
+    },
+    {
+      "s": 483.6,
+      "visible": 1316,
+      "inFlight": 14
+    },
+    {
+      "s": 485.6,
+      "visible": 606,
+      "inFlight": 24
+    },
+    {
+      "s": 487.7,
+      "visible": 1316,
+      "inFlight": 14
+    },
+    {
+      "s": 489.9,
+      "visible": 606,
+      "inFlight": 24
+    },
+    {
+      "s": 491.9,
+      "visible": 192,
+      "inFlight": 18
+    },
+    {
+      "s": 494,
+      "visible": 826,
+      "inFlight": 14
+    },
+    {
+      "s": 496,
+      "visible": 312,
+      "inFlight": 28
+    },
+    {
+      "s": 498.1,
+      "visible": 242,
+      "inFlight": 28
+    },
+    {
+      "s": 500.1,
+      "visible": 192,
+      "inFlight": 18
+    },
+    {
+      "s": 502.2,
+      "visible": 242,
+      "inFlight": 28
+    },
+    {
+      "s": 504.2,
+      "visible": 4,
+      "inFlight": 6
+    },
+    {
+      "s": 506.3,
+      "visible": 0,
+      "inFlight": 0
+    },
+    {
+      "s": 508.3,
+      "visible": 0,
+      "inFlight": 0
+    },
+    {
+      "s": 510.4,
+      "visible": 0,
+      "inFlight": 0
+    }
+  ],
+  "seededSubscriptions": 100
+}

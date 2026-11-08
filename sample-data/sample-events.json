@@ -1,0 +1,7 @@
+{
+  "events": [
+    { "type": "DELAY", "version": 1, "flightNumber": "AC123", "flightDate": "2026-11-20", "occurredAt": "2026-11-20T10:00:00Z", "delayMinutes": 95, "reason": "Weather" },
+    { "type": "GATE_CHANGE", "version": 1, "flightNumber": "AC123", "flightDate": "2026-11-20", "occurredAt": "2026-11-20T10:05:00Z", "newGate": "C32", "oldGate": "C30" },
+    { "type": "CANCELLATION", "version": 1, "flightNumber": "AC456", "flightDate": "2026-11-20", "occurredAt": "2026-11-20T10:10:00Z", "reason": "Mechanical" }
+  ]
+}

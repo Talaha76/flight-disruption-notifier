@@ -1,0 +1,10 @@
+node_modules/
+cdk.out/
+coverage/
+cdk-outputs.json
+cdk.context.json
+.env
+*.log
+.DS_Store
+out.json
+docs/resume-bullets.md

@@ -1,0 +1,44 @@
+{
+  "kind": "batching",
+  "label": "batch1",
+  "runId": "bt1-20261108T003704-5f21",
+  "measuredAt": "2026-11-08T00:39:13.233Z",
+  "config": {
+    "coldStartProfile": "p4-256mb",
+    "processorBatchSize": 1,
+    "billingMode": "PAY_PER_REQUEST",
+    "apiRateLimit": 200
+  },
+  "batchSize": 1,
+  "batchingWindowSeconds": 0,
+  "events": 1000,
+  "accepted": 1000,
+  "completed": 1000,
+  "lost": 0,
+  "outcomes": {
+    "NOTIFIED": 900,
+    "STALE": 100
+  },
+  "processor": {
+    "memoryMb": 256,
+    "arch": "arm64"
+  },
+  "invocations": 985,
+  "eventsPerInvocation": 1.02,
+  "billedMs": 62574,
+  "avgDurationMs": 63.5,
+  "p95DurationMs": 115.8,
+  "coldStarts": 1,
+  "timeToDrainSeconds": 68,
+  "per10kEvents": {
+    "invocations": 9850,
+    "gbSeconds": 156.436,
+    "lambdaCostUsd": 0.00406
+  },
+  "logsInsights": {
+    "invocations": 985,
+    "billedMs": 63375
+  },
+  "countSource": "cloudwatch-metrics",
+  "processorErrors": 0
+}

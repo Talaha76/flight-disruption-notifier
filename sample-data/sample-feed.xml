@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlightStatusFeed generatedAt="2026-11-20T12:00:00Z">
+  <FlightStatus recordId="R1"><Carrier>AC</Carrier><FlightNo>123</FlightNo><DepDate>2026-11-20</DepDate><StatusCode>DL</StatusCode><DelayMin>45</DelayMin><Remark>Crew</Remark><Timestamp>2026-11-20T11:59:00Z</Timestamp></FlightStatus>
+  <FlightStatus recordId="R2"><Carrier>AC</Carrier><FlightNo>456</FlightNo><DepDate>2026-11-20</DepDate><StatusCode>GC</StatusCode><Gate>D7</Gate><PrevGate>D5</PrevGate><Timestamp>2026-11-20T11:59:00Z</Timestamp></FlightStatus>
+  <FlightStatus recordId="R3"><Carrier>AC</Carrier><FlightNo>789</FlightNo><DepDate>2026-11-20</DepDate><StatusCode>CX</StatusCode><Remark>Mechanical</Remark><Timestamp>2026-11-20T11:59:00Z</Timestamp></FlightStatus>
+</FlightStatusFeed>

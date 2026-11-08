@@ -1,0 +1,214 @@
+{
+  "kind": "coldstarts",
+  "profile": "p2-runtime-sdk",
+  "label": "+ use the Lambda runtime's built-in AWS SDK v3 (not bundled)",
+  "measuredAt": "2026-11-08T00:54:47.283Z",
+  "function": "SubscriptionsFn (GET /flights -> DynamoDB GetItem)",
+  "arch": "x86_64",
+  "memoryMb": 128,
+  "codeSizeKb": 94,
+  "initMs": {
+    "n": 15,
+    "p50": 369.26,
+    "p95": 417.21,
+    "min": 354.57,
+    "max": 417.21,
+    "avg": 377.91666666666674
+  },
+  "coldInvokeMs": {
+    "n": 15,
+    "p50": 812.8,
+    "p95": 848.15,
+    "min": 755.96,
+    "max": 848.15,
+    "avg": 805.1193333333334
+  },
+  "coldTotalMs": {
+    "n": 15,
+    "p50": 1174.83,
+    "p95": 1251.97,
+    "min": 1113.43,
+    "max": 1251.97,
+    "avg": 1183.036
+  },
+  "warmInvokeMs": {
+    "n": 10,
+    "p50": 30.07,
+    "p95": 431.13,
+    "min": 24.3,
+    "max": 431.13,
+    "avg": 88.60199999999999
+  },
+  "maxMemoryUsedMb": 104,
+  "raw": {
+    "cold": [
+      {
+        "durationMs": 762.88,
+        "billedMs": 1121,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 102,
+        "initMs": 357.99
+      },
+      {
+        "durationMs": 771.7,
+        "billedMs": 1127,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 103,
+        "initMs": 354.57
+      },
+      {
+        "durationMs": 816.33,
+        "billedMs": 1175,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 102,
+        "initMs": 358.5
+      },
+      {
+        "durationMs": 768,
+        "billedMs": 1125,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 101,
+        "initMs": 356.41
+      },
+      {
+        "durationMs": 792.29,
+        "billedMs": 1155,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 102,
+        "initMs": 362.38
+      },
+      {
+        "durationMs": 833.47,
+        "billedMs": 1221,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 102,
+        "initMs": 387.01
+      },
+      {
+        "durationMs": 795.72,
+        "billedMs": 1165,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 103,
+        "initMs": 369
+      },
+      {
+        "durationMs": 834.76,
+        "billedMs": 1252,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 102,
+        "initMs": 417.21
+      },
+      {
+        "durationMs": 792.04,
+        "billedMs": 1164,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 102,
+        "initMs": 371.77
+      },
+      {
+        "durationMs": 825.83,
+        "billedMs": 1222,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 102,
+        "initMs": 395.24
+      },
+      {
+        "durationMs": 848.15,
+        "billedMs": 1218,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 104,
+        "initMs": 369.26
+      },
+      {
+        "durationMs": 755.96,
+        "billedMs": 1114,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 103,
+        "initMs": 357.47
+      },
+      {
+        "durationMs": 812.8,
+        "billedMs": 1224,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 103,
+        "initMs": 410.48
+      },
+      {
+        "durationMs": 845.11,
+        "billedMs": 1232,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 103,
+        "initMs": 386.03
+      },
+      {
+        "durationMs": 821.75,
+        "billedMs": 1238,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 103,
+        "initMs": 415.43
+      }
+    ],
+    "warm": [
+      {
+        "durationMs": 431.13,
+        "billedMs": 432,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 104
+      },
+      {
+        "durationMs": 128.28,
+        "billedMs": 129,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 104
+      },
+      {
+        "durationMs": 24.3,
+        "billedMs": 25,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 104
+      },
+      {
+        "durationMs": 48.01,
+        "billedMs": 49,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 104
+      },
+      {
+        "durationMs": 29.15,
+        "billedMs": 30,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 104
+      },
+      {
+        "durationMs": 28.03,
+        "billedMs": 29,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 104
+      },
+      {
+        "durationMs": 24.43,
+        "billedMs": 25,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 104
+      },
+      {
+        "durationMs": 97.42,
+        "billedMs": 98,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 104
+      },
+      {
+        "durationMs": 45.2,
+        "billedMs": 46,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 104
+      },
+      {
+        "durationMs": 30.07,
+        "billedMs": 31,
+        "memoryMb": 128,
+        "maxMemoryUsedMb": 104
+      }
+    ]
+  }
+}
